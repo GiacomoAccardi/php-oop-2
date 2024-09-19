@@ -5,12 +5,14 @@ class Prodotto{
     public $image;
     public $prezzo;
     public $categoria;
+    public $tipologia;
 
-    function __construct($_nome, $_prezzo, $_image, Categoria $_categoria) {
+    function __construct($_nome, $_prezzo, $_image, Categoria $_categoria, tipologia $_tipologia) {
         $this->nome = $_nome;
         $this->prezzo = $_prezzo;
         $this->image = $_image;
         $this->categoria = $_categoria;
+        $this->tipologia = $_tipologia;
     }
 
     //funzione che mostra le info
@@ -19,9 +21,6 @@ class Prodotto{
         return "Nome prodotto: ".$this->nome." | prezzo: ".$this->prezzo;
     }
 }
-
-//istanze Prodotto
-
 
 class Categoria extends Prodotto{
     public $nomeCategoria;
@@ -33,7 +32,14 @@ class Categoria extends Prodotto{
     }
 }
 
-//istanze Categoria
+class tipologia extends Prodotto{
+    public $type;
+    public $icon;
 
+    function __construct($_type, $_icon) {
+        $this->type = $_type;
+        $this->icon = $_icon;
+    }
+}
 
 ?>
