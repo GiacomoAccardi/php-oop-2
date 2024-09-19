@@ -19,4 +19,14 @@ $bocconicini = new Prodotto("Bocconcini - rabbit/turkey", "2,99 €", "https://m
 $spazzola = new Prodotto("spazzola - MeowMeow", "6,50 €", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUOKwqVumJy3o5hqhghp4HNfsIZ9IP9hIU_g&s", $xGatto, $Cura);
 
 $palla = new Prodotto("Palla di gomma", "3,00 €", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhb2zEN-DR3IMTdnDIC6jZtdsYPRiG43VS4w&s", $xCane, $Gioco);
+
+//var_dump($palla);
+
+$prodotti = [
+    $ciboCani,
+    $bocconicini,
+    $spazzola,
+    $palla
+];
+
 ?>
